@@ -15,6 +15,19 @@ export EDITOR='nvim'
 export TERM='xterm-256color'
 
 ###
+# 1Password specific
+###
+if [ -f "$HOME/.1password/agenst.sock" ] ; then
+  export SSH_AUTH_SOCK=~/.1password/agent.sock
+fi
+
+
+if [ -f "$(mkcert -CAROOT)/rootCA.pem" ] ; then
+  export NODE_EXTRA_CA_CERTS="$(mkcert -CAROOT)/rootCA.pem"
+fi
+
+
+###
 # History settings
 ###
 export HISTFILE=$HOME/.zsh_history
