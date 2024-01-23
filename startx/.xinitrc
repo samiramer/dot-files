@@ -12,7 +12,7 @@ if which dbus-update-activation-environment >/dev/null 2>&1; then
 fi
 
 # Start polkit agent
-#/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
+/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 
 xset r rate 200 40
 
