@@ -1,0 +1,11 @@
+#!/bin/sh
+
+case "$(echo -e "Logout\nShutdown\nReboot\nSuspend\nLock" | dmenu \
+    -i -p \
+    "Power:" -l 5)" in
+        Shutdown) exec systemctl poweroff;;
+        Reboot) exec systemctl reboot;;
+        Logout) exec loginctl kill-session self;;
+        Suspend) exec systemctl suspend;;
+        Lock) exec loginctl lock-session self;;
+esac

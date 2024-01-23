@@ -1,0 +1,6 @@
+#!/bin/sh
+
+VOL=$(pamixer --get-volume-human)
+SINK=$(pamixer --get-default-sink | sed -n 2p |  cut -d '"' -f4)
+
+printf "%s [%s]" "${VOL}" "${SINK}"
