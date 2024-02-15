@@ -1,0 +1,13 @@
+#!/bin/sh
+
+case "$(echo -e "Start\nBreak\nPause\nClear\nCancel\nFinish\nStatus" | dmenu \
+    -i -p \
+    "Pomodoro:" -l 7)" in
+        Start) exec pomodoro start;;
+        Break) exec pomodoro break;;
+        Pause) exec pomodoro pause;;
+        Repeat) exec pomodoro repeat;;
+        Clear) exec pomodoro clear;;
+        Cancel) exec pomodoro cancel;;
+        Finish) exec pomodoro finish;;
+esac

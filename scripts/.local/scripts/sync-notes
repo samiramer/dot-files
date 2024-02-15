@@ -1,0 +1,3 @@
+#!/bin/sh
+
+rclone bisync google-drive:/notes ~/Notes

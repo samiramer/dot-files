@@ -20,4 +20,10 @@ if [ ! -z $VPN ]; then
     OUTPUT="$OUTPUT 󰌾 wg0:$VPN "
 fi
 
+VPN=$(ip addr show | grep "SunnyByte" | grep "inet" | awk '{print $2}')
+
+if [ ! -z $VPN ]; then
+  OUTPUT="$OUTPUT 󰌾 SB:$VPN "
+fi
+
 printf "%s" "$OUTPUT"
