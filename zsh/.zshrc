@@ -17,7 +17,7 @@ export TERM='xterm-256color'
 ###
 # 1Password specific
 ###
-if [ -f "$HOME/.1password/agenst.sock" ] ; then
+if [ -e "$HOME/.1password/agent.sock" ] ; then
   export SSH_AUTH_SOCK=~/.1password/agent.sock
 fi
 
