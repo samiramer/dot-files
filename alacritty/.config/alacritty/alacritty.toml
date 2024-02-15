@@ -5,21 +5,21 @@ live_config_reload = true
 size = 10
 
 [font.bold]
-family = "NotoSansM Nerd Font Mono"
+family = "SauceCodePro Nerd Font Mono"
 
 [font.glyph_offset]
 x = 0
-y = 10
+y = 0
 
 [font.italic]
-family = "NotoSansM Nerd Font Mono"
+family = "SauceCodePro Nerd Font Mono"
 
 [font.normal]
-family = "NotoSansM Nerd Font Mono"
+family = "SauceCodePro Nerd Font Mono"
 
 [font.offset]
 x = 0
-y = 20
+y = 0
 
 [window]
 # decorations = "none"
