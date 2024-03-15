@@ -1,5 +1,6 @@
 import = [
   # "~/.config/alacritty/gruvbox-hard-dark.toml",
+  # "~/.config/alacritty/gruvbox-hard-light.toml",
   "~/.config/alacritty/kanagawa-wave.toml",
 ]
 live_config_reload = true
@@ -8,17 +9,17 @@ live_config_reload = true
 size = 10
 
 [font.bold]
-family = "SauceCodePro Nerd Font Mono"
+family = "monospace"
 
 [font.glyph_offset]
 x = 0
 y = 0
 
 [font.italic]
-family = "SauceCodePro Nerd Font Mono"
+family = "monospace"
 
 [font.normal]
-family = "SauceCodePro Nerd Font Mono"
+family = "monospace"
 
 [font.offset]
 x = 0
