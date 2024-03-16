@@ -9,4 +9,7 @@ zmodule jeffreytse/zsh-vi-mode
 zmodule zsh-users/zsh-syntax-highlighting
 zmodule zsh-users/zsh-autosuggestions
 zmodule zsh-users/zsh-history-substring-search
+
+export PURE_GIT_UP_ARROW=""
+export PURE_GIT_DOWN_ARROW=""
 zmodule sindresorhus/pure --source async.zsh --source pure.zsh
