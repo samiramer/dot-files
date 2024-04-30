@@ -64,4 +64,8 @@ if [ -x "$(command -v 1password)" ]; then
   1password --silent &
 fi
 
+if [ -x "$(command -v rclone)" ]; then
+  rclone mount --vfs-cache-mode full google-drive:/notes /files/notes &
+fi
+
 exec dwm
