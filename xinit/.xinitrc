@@ -68,4 +68,7 @@ if [ -x "$(command -v rclone)" ]; then
   rclone mount --vfs-cache-mode full google-drive:/notes /files/notes &
 fi
 
+if [ -x "$(command -v xrandr)" ]; then
+  xrandr -s 2560x1440  -r 100
+fi
 exec dwm
