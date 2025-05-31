@@ -20,12 +20,16 @@ if [ -x "$(command -v xss-lock)" ]; then
   xss-lock --transfer-sleep-lock -- i3lock -i ~/.config/wallpaper/blurred-wall.png &
 fi
 
-if [ -x "$(command -v xautolock)" ]; then
-  xautolock -detectsleep \
-    -corners -000 \
-    -time 10 -locker "i3lock -i ~/.config/wallpaper/blurred-wall.png" \
-    -notify 120 -notifier "xset dpms force off" \
-    -killtime 20 -killer "systemctl suspend" &
+#if [ -x "$(command -v xautolock)" ]; then
+#  xautolock -detectsleep \
+#    -corners -000 \
+#    -time 10 -locker "i3lock -i ~/.config/wallpaper/blurred-wall.png" \
+#    -notify 120 -notifier "xset dpms force off" \
+#    -killtime 20 -killer "systemctl suspend" &
+#fi
+
+if [ -x "$(command -v pasystray)" ]; then
+  pasystray &
 fi
 
 if [ -x "$(command -v feh)" ]; then
