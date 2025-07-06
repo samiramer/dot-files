@@ -1,0 +1,26 @@
+#!/bin/bash
+
+dmenu_command=(wofi --dmenu --prompt "Power Menu" -i)
+
+# Define menu options and corresponding actions
+options=(
+  "Lock"
+  "Logout"
+  "Shutdown"
+  "Reboot"
+)
+
+# Create associative array mapping text to actions
+declare -A actions
+actions["Lock"]="hyprlock"
+actions["Logout"]="loginctl terminate-user \"\""
+actions["Shutdown"]="systemctl poweroff"
+actions["Reboot"]="systemctl reboot"
+
+# Prompt user using rofi in dmenu mode
+choice=$(printf '%s\n' "${options[@]}" | "${dmenu_command[@]}")
+
+# Run the corresponding command if valid choice was made
+if [[ -n "$choice" && -n "${actions[$choice]}" ]]; then
+  eval "${actions[$choice]}"
+fi
