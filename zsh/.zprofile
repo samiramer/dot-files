@@ -9,5 +9,8 @@ if [ -d "$HOME/.local/scripts" ] ; then
 fi
 
 if [ -z "${DISPLAY}" ] && [ "${XDG_VTNR}" -eq 1 ]; then
-	exec startx
+	# exec startx
+  if uwsm check may-start; then
+      exec uwsm start hyprland-uwsm.desktop
+  fi
 fi
