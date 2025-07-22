@@ -26,8 +26,10 @@ y = 5
 live_config_reload = true
 import = [
   # "~/.config/alacritty/nightfly.toml",
-  "~/.config/alacritty/gruvbox-hard-dark.toml",
+  # "~/.config/alacritty/gruvbox-hard-dark.toml",
   # "~/.config/alacritty/gruvbox-hard-light.toml",
+  "~/.config/alacritty/gruvbox-material-hard-dark.toml",
+  # "~/.config/alacritty/gruvbox-material-hard-light.toml",
   # "~/.config/alacritty/kanagawa-wave.toml",
   # "~/.config/alacritty/terafox.toml",
 ]
