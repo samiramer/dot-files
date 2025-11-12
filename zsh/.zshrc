@@ -24,6 +24,10 @@ if [ -f "$HOME/.cargo/env" ] ; then
   source "$HOME/.cargo/env"
 fi
 
+if [ -f "$HOME/.local/share/bob/nvim-bin/nvim" ]; then
+  PATH="$HOME/.local/share/bob/nvim-bin:$PATH"
+fi
+
 if [ -d "$HOME/.local/scripts" ] ; then
   PATH="$HOME/.local/scripts:$PATH"
 fi
