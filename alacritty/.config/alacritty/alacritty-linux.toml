@@ -1,13 +1,13 @@
 [font]
-size = 11
+size = 13.5
 
 [font.glyph_offset]
 x = 0
-y = 0 
+y = 2 
 
 [font.offset]
 x = 0
-y = 0 
+y = 4 
 
 [font.bold]
 family = "monospace"
@@ -29,8 +29,8 @@ y = 5
 [general]
 live_config_reload = true
 import = [
-  "~/.config/alacritty/gruvbox-material.toml",
-  # "~/.config/alacritty/gruvbox-material-hard-dark.toml",
+  # "~/.config/alacritty/gruvbox-material.toml",
+  "~/.config/alacritty/gruvbox-material-hard-dark.toml",
   # "~/.config/alacritty/gruvbox-material-hard-light.toml",
   # "~/.config/alacritty/gruvbox-hard-dark.toml",
   # "~/.config/alacritty/gruvbox-hard-light.toml",
