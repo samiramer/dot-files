@@ -1,0 +1,10 @@
+[[shaders]]
+name = "vibrance"
+default = true
+
+[[shaders]]
+name = "blue-light-filter"
+start_time = 17:00:00
+end_time = 06:00:00
+[shaders.config]
+temperature = 5000
