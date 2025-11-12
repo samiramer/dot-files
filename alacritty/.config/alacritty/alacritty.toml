@@ -12,11 +12,14 @@ size = 15
 
 [font.glyph_offset]
 x = 0
-y = 0 
+y = 3 
 
 [font.offset]
 x = 0
-y = 0 
+y = 6 
+
+[window]
+decorations_theme_variant = "Dark"
 
 [window.padding]
 x = 5
@@ -26,8 +29,13 @@ y = 5
 live_config_reload = true
 import = [
   # "~/.config/alacritty/nightfly.toml",
+  # "~/.config/alacritty/catppuccin-mocha.toml",
+  # "~/.config/alacritty/github-default-light.toml",
+  # "~/.config/alacritty/github-light-tritanopia.toml",
   # "~/.config/alacritty/gruvbox-hard-dark.toml",
   # "~/.config/alacritty/gruvbox-hard-light.toml",
+  # "~/.config/alacritty/gruvbox-material.toml",
+  # "~/.config/alacritty/gruvbox-material-light.toml",
   "~/.config/alacritty/gruvbox-material-hard-dark.toml",
   # "~/.config/alacritty/gruvbox-material-hard-light.toml",
   # "~/.config/alacritty/kanagawa-wave.toml",
