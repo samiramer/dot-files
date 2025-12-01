@@ -36,5 +36,6 @@ import = [
   # "~/.config/alacritty/gruvbox-hard-light.toml",
   # "~/.config/alacritty/catppuccin-latte.toml",
   # "~/.config/alacritty/catppuccin-mocha.toml",
+  # "~/.config/alacritty/github-light-tritanopia.toml"
 ]
 
