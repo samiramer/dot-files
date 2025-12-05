@@ -1,13 +1,13 @@
 [font]
-size = 13.5
+size = 11.5
 
 [font.glyph_offset]
 x = 0
-y = 2 
+y = 0 
 
 [font.offset]
 x = 0
-y = 4 
+y = 0 
 
 [font.bold]
 family = "monospace"
@@ -23,14 +23,16 @@ decorations = "none"
 opacity = 1.0
 
 [window.padding]
-x = 5
-y = 5
+x = 0
+y = 0
 
 [general]
 live_config_reload = true
 import = [
   # "~/.config/alacritty/gruvbox-material.toml",
-  "~/.config/alacritty/gruvbox-material-hard-dark.toml",
+  # "~/.config/alacritty/gruvbox-material-hard-dark.toml",
+  # "~/.config/alacritty/tokyonight-day.toml",
+  "~/.config/alacritty/tokyonight-moon.toml",
   # "~/.config/alacritty/gruvbox-material-hard-light.toml",
   # "~/.config/alacritty/gruvbox-hard-dark.toml",
   # "~/.config/alacritty/gruvbox-hard-light.toml",
