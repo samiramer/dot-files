@@ -113,8 +113,8 @@
         "format-alt": "{:%F %T}",
         "tooltip-format": "{tz_list}",
         "timezones": [
-            "Asia/Dubai",
             "Canada/Eastern",
+            "Asia/Dubai",
             "America/Los_Angeles",
             "Africa/Addis_Ababa",
             "Etc/UTC",
