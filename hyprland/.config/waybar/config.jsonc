@@ -107,8 +107,18 @@
     },
     "clock": {
         // "timezone": "America/New_York",
-        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-        "format-alt": "{:%Y-%m-%d}"
+        // "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+        "interval": 1,
+        "format": "{:%h %d %r}",
+        "format-alt": "{:%F %T}",
+        "tooltip-format": "{tz_list}",
+        "timezones": [
+            "Canada/Eastern",
+            "America/Los_Angeles",
+            "Asia/Dubai",
+            "Africa/Addis_Ababa",
+            "Etc/UTC",
+        ]
     },
     "cpu": {
         "format": "{usage}% ",
