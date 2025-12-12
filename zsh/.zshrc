@@ -32,12 +32,16 @@ if [ -d "$HOME/.local/scripts" ] ; then
   PATH="$HOME/.local/scripts:$PATH"
 fi
 
-if [ -d "$(composer -n config --global home)/vendor/bin" ]; then
-  PATH="$(composer -n config --global home)/vendor/bin:$PATH"
+if command -v composer &>/dev/null; then
+    if [ -d "$(composer -n config --global home)/vendor/bin" ]; then
+      PATH="$(composer -n config --global home)/vendor/bin:$PATH"
+    fi
 fi
 
-if [ -f "$(mkcert -CAROOT)/rootCA.pem" ] ; then
-  export NODE_EXTRA_CA_CERTS="$(mkcert -CAROOT)/rootCA.pem"
+if command -v mkcert &>/dev/null; then
+  if [ -f "$(mkcert -CAROOT)/rootCA.pem" ] ; then
+    export NODE_EXTRA_CA_CERTS="$(mkcert -CAROOT)/rootCA.pem"
+  fi
 fi
 
 if [ -L "/opt/homebrew/opt/php@8.2" ] && [ -d "/opt/homebrew/opt/php@8.2" ] ; then
@@ -63,11 +67,6 @@ export TERM='xterm-256color'
 ###
 if [ -e "$HOME/.1password/agent.sock" ] ; then
   export SSH_AUTH_SOCK=~/.1password/agent.sock
-fi
-
-
-if [ -f "$(mkcert -CAROOT)/rootCA.pem" ] ; then
-  export NODE_EXTRA_CA_CERTS="$(mkcert -CAROOT)/rootCA.pem"
 fi
 
 
