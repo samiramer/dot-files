@@ -7,7 +7,7 @@ family = "monospace"
 
 [font.glyph_offset]
 x = 0
-y = 0
+y = 10
 
 [font.italic]
 family = "monospace"
@@ -17,7 +17,7 @@ family = "monospace"
 
 [font.offset]
 x = 0
-y = 0
+y = 20
 
 # [window]
 # decorations = "none"
