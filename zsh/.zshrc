@@ -6,7 +6,9 @@ if [ -d "$HOME/.local/scripts" ] ; then
   PATH="$HOME/.local/scripts:$PATH"
 fi
 
-autoload -Uz compinit && compinit -i
+if [ -d "$(composer -n config --global home)/vendor/bin" ]; then
+  PATH="$(composer -n config --global home)/vendor/bin:$PATH"
+fi
 
 ###
 # Env variables
