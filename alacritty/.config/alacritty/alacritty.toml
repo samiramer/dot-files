@@ -2,18 +2,9 @@
 [font]
 size = 13
 
-[font.bold]
-family = "monospace"
-
 [font.glyph_offset]
 x = 0
 y = 10
-
-[font.italic]
-family = "monospace"
-
-[font.normal]
-family = "monospace"
 
 [font.offset]
 x = 0
@@ -30,6 +21,8 @@ y = 5
 [general]
 live_config_reload = true
 import = [
+  "~/.config/alacritty/fonts-linux.toml",
+  "~/.config/alacritty/fonts-macos.toml",
   # "~/.config/alacritty/nightfly.toml",
   "~/.config/alacritty/gruvbox-hard-dark.toml",
   # "~/.config/alacritty/gruvbox-hard-light.toml",
