@@ -29,7 +29,8 @@ y = 5
 [general]
 live_config_reload = true
 import = [
-  "~/.config/alacritty/gruvbox-material-hard-dark.toml",
+  "~/.config/alacritty/gruvbox-material.toml",
+  # "~/.config/alacritty/gruvbox-material-hard-dark.toml",
   # "~/.config/alacritty/gruvbox-material-hard-light.toml",
   # "~/.config/alacritty/gruvbox-hard-dark.toml",
   # "~/.config/alacritty/gruvbox-hard-light.toml",
