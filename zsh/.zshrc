@@ -1,7 +1,27 @@
+# auto complete for ddev
+if type brew &>/dev/null
+then
+  FPATH="$(brew --prefix)/share/zsh/site-functions:${FPATH}"
+fi
+
+if [ -f "$HOME/.docker/completions/_docker" ] ; then
+  FPATH="$HOME/.docker/completions:$FPATH"
+fi
+
 export XDG_DOWNLOAD_DIR="$HOME/Downloads"
+
+export HOMEBREW_NO_AUTO_UPDATE="1"
 
 if [ -d "$HOME/.local/bin" ] ; then
   PATH="$HOME/.local/bin:$PATH"
+fi
+
+if [ -d "$HOME/.cargo/bin" ] ; then
+  PATH="$HOME/.carbo/bin:$PATH"
+fi
+
+if [ -f "$HOME/.cargo/env" ] ; then
+  source "$HOME/.cargo/env"
 fi
 
 if [ -d "$HOME/.local/scripts" ] ; then
@@ -16,6 +36,18 @@ if [ -f "$(mkcert -CAROOT)/rootCA.pem" ] ; then
   export NODE_EXTRA_CA_CERTS="$(mkcert -CAROOT)/rootCA.pem"
 fi
 
+if [ -L "/opt/homebrew/opt/php@8.2" ] && [ -d "/opt/homebrew/opt/php@8.2" ] ; then
+  alias php82="/opt/homebrew/opt/php@8.2/bin/php"
+fi
+
+if [ -L "/opt/homebrew/opt/php@8.1" ] && [ -d "/opt/homebrew/opt/php@8.1" ] ; then
+  alias php81="/opt/homebrew/opt/php@8.1/bin/php"
+fi
+
+if [ -L "/opt/homebrew/opt/php@8.0" ] && [ -d "/opt/homebrew/opt/php@8.0" ] ; then
+  alias php80="/opt/homebrew/opt/php@8.0/bin/php"
+fi
+  
 ###
 # Env variables
 ###
@@ -103,7 +135,8 @@ alias gst="git status"
 alias gaa="git add --all"
 alias gcmsg="git commit -m"
 alias gp="git push"
-alias glog="git log --oneline --decorate --graph"
+# alias glog="git log --oneline --decorate --graph"
+alias glog="git log --pretty=format:%Cgreen%h\ %Cred%d\ %Creset%s\ %Cblue\[%an\ -\ %aD\] --graph --abbrev-commit"
 alias tma="tmux attach"
 alias tms="tmux-sessionizer"
 alias dcraft="ddev craft"
