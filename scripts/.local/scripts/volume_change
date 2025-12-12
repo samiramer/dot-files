@@ -5,7 +5,7 @@ then
     pamixer -t
 elif [[ $1 == 'i' ]] || [[ $1 == 'd' ]]
 then
-    pamixer --allow-boost -$1 10
+    pamixer --allow-boost -$1 5 
 fi
 
 notify-send -t 500 -h string:x-canonical-private-synchronous:volume "Vol: $(pamixer --get-volume-human)"
