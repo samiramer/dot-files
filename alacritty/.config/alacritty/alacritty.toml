@@ -1,4 +1,4 @@
-import = ["/home/samer/.config/alacritty/kanagawa-wave.toml"]
+import = ["~/.config/alacritty/kanagawa-wave.toml"]
 live_config_reload = true
 
 [font]
@@ -22,7 +22,7 @@ x = 0
 y = 0
 
 [window]
-# decorations = "none"
+decorations = "none"
 opacity = 1.0
 
 [window.padding]
