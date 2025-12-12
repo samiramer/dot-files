@@ -6,6 +6,7 @@ dmenu_command=(wofi --dmenu --prompt "Power Menu" -i)
 options=(
   "Lock"
   "Logout"
+  "Suspend"
   "Shutdown"
   "Reboot"
 )
@@ -14,6 +15,7 @@ options=(
 declare -A actions
 actions["Lock"]="hyprlock"
 actions["Logout"]="loginctl terminate-user \"\""
+actions["Suspend"]="systemctl suspend"
 actions["Shutdown"]="systemctl poweroff"
 actions["Reboot"]="systemctl reboot"
 
