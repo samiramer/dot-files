@@ -113,9 +113,9 @@
         "format-alt": "{:%F %T}",
         "tooltip-format": "{tz_list}",
         "timezones": [
+            "Asia/Dubai",
             "Canada/Eastern",
             "America/Los_Angeles",
-            "Asia/Dubai",
             "Africa/Addis_Ababa",
             "Etc/UTC",
         ]
