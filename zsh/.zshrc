@@ -151,3 +151,8 @@ export NVM_DIR="$HOME/.nvm"
 
 # Added by LM Studio CLI (lms)
 export PATH="$PATH:/Users/samer/.lmstudio/bin"
+
+# Added by LM Studio CLI (lms)
+export PATH="$PATH:/home/samer/.lmstudio/bin"
+# End of LM Studio CLI section
+
