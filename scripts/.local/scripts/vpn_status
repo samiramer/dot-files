@@ -1,0 +1,23 @@
+#!/bin/sh
+
+VPN=$(ip addr show | grep "tun0" | grep "inet" | awk '{print $2}')
+
+OUTPUT=""
+
+if [ ! -z $VPN ]; then
+    OUTPUT="󰌾 tun0:$VPN "
+fi
+
+VPN=$(ip addr show | grep "tun1" | grep "inet" | awk '{print $2}')
+
+if [ ! -z $VPN ]; then
+    OUTPUT="$OUTPUT 󰌾 tun1:$VPN "
+fi
+
+VPN=$(ip addr show | grep "wg0" | grep "inet" | awk '{print $2}')
+
+if [ ! -z $VPN ]; then
+    OUTPUT="$OUTPUT 󰌾 wg0:$VPN "
+fi
+
+printf "%s" "$OUTPUT"
