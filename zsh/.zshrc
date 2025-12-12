@@ -140,6 +140,7 @@ alias glog="git log --pretty=format:%Cgreen%h\ %Cred%d\ %Creset%s\ %Cblue\[%an\ 
 alias tma="tmux attach"
 alias tms="tmux-sessionizer"
 alias dcraft="ddev craft"
+alias da="ddev artisan"
 alias dnpm="ddev npm"
 alias dcomp="ddev composer"
 alias nvimdiff="nvim -d"
