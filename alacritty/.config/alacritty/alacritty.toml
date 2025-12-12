@@ -13,7 +13,7 @@ family = "monospace"
 
 [font.glyph_offset]
 x = 0
-y = 0
+y = 5
 
 [font.italic]
 family = "monospace"
@@ -23,12 +23,12 @@ family = "monospace"
 
 [font.offset]
 x = 0
-y = 0
+y = 10
 
 [window]
 decorations = "none"
 opacity = 1.0
 
 [window.padding]
-x = 5
+x = 0
 y = 5
