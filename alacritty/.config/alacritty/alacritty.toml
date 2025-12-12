@@ -1,12 +1,13 @@
 import = [
-  "~/.config/alacritty/gruvbox-hard-dark.toml",
+  "~/.config/alacritty/nightfly.toml",
+  #"~/.config/alacritty/gruvbox-hard-dark.toml",
   # "~/.config/alacritty/gruvbox-hard-light.toml",
   # "~/.config/alacritty/kanagawa-wave.toml",
 ]
 live_config_reload = true
 
 [font]
-size = 9 
+size = 12 
 
 [font.bold]
 family = "monospace"
@@ -25,10 +26,10 @@ family = "monospace"
 x = 0
 y = 0
 
-[window]
-decorations = "none"
-opacity = 1.0
+# [window]
+# decorations = "none"
+# opacity = 1.0
 
 [window.padding]
-x = 0
+x = 5
 y = 5
