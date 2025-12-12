@@ -10,6 +10,10 @@ if [ -d "$(composer -n config --global home)/vendor/bin" ]; then
   PATH="$(composer -n config --global home)/vendor/bin:$PATH"
 fi
 
+if [ -f "$(mkcert -CAROOT)/rootCA.pem" ] ; then
+  export NODE_EXTRA_CA_CERTS="$(mkcert -CAROOT)/rootCA.pem"
+fi
+
 ###
 # Env variables
 ###
