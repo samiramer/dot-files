@@ -6,14 +6,14 @@ import = [
 live_config_reload = true
 
 [font]
-size = 10
+size = 9 
 
 [font.bold]
 family = "monospace"
 
 [font.glyph_offset]
 x = 0
-y = 5
+y = 0
 
 [font.italic]
 family = "monospace"
@@ -23,7 +23,7 @@ family = "monospace"
 
 [font.offset]
 x = 0
-y = 10
+y = 0
 
 [window]
 decorations = "none"
