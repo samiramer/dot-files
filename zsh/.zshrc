@@ -83,7 +83,12 @@ alias gaa="git add --all"
 alias gcmsg="git commit -m"
 alias gp="git push"
 alias glog="git log --oneline --decorate --graph"
-
+alias tma="tmux attach"
+alias tms="tmux-sessionizer"
+alias dcraft="ddev craft"
+alias dnpm="ddev npm"
+alias dcomp="ddev composer"
+alias nvimdiff="nvim -d"
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
