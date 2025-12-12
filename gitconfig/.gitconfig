@@ -1,0 +1,9 @@
+# This is Git's per-user configuration file.
+[user]
+# Please adapt and uncomment the following lines:
+  name = Samir Amer
+	email = samir@sunnybyte.com
+[merge]
+	tool = nvimdiff
+[core]
+	editor = vi

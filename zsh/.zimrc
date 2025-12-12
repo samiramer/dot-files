@@ -1,0 +1,12 @@
+zmodule zsh-users/zsh-completions --fpath src
+zmodule archive
+zmodule fzf
+zmodule utility
+zmodule completion
+zmodule prompt-pwd
+zmodule git-info
+zmodule jeffreytse/zsh-vi-mode
+zmodule zsh-users/zsh-syntax-highlighting
+zmodule zsh-users/zsh-autosuggestions
+zmodule zsh-users/zsh-history-substring-search
+zmodule sindresorhus/pure --source async.zsh --source pure.zsh
