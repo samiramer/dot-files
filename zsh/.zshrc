@@ -156,3 +156,5 @@ export PATH="$PATH:/Users/samer/.lmstudio/bin"
 export PATH="$PATH:/home/samer/.lmstudio/bin"
 # End of LM Studio CLI section
 
+complete -C '/usr/bin/aws_completer' aws
+
