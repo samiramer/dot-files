@@ -24,20 +24,22 @@ opacity = 1.0
 
 [window.padding]
 x = 0
-y = 0
+y = 0 
 
 [general]
 live_config_reload = true
 import = [
+  # "~/.config/alacritty/nightfly.toml",
   # "~/.config/alacritty/gruvbox-material.toml",
   # "~/.config/alacritty/gruvbox-material-hard-dark.toml",
   # "~/.config/alacritty/tokyonight-day.toml",
-  "~/.config/alacritty/tokyonight-moon.toml",
+  # "~/.config/alacritty/tokyonight-moon.toml",
   # "~/.config/alacritty/gruvbox-material-hard-light.toml",
   # "~/.config/alacritty/gruvbox-hard-dark.toml",
   # "~/.config/alacritty/gruvbox-hard-light.toml",
   # "~/.config/alacritty/catppuccin-latte.toml",
   # "~/.config/alacritty/catppuccin-mocha.toml",
   # "~/.config/alacritty/github-light-tritanopia.toml"
+  "~/.config/alacritty/kanagawa-wave.toml"
 ]
 

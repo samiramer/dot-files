@@ -11,6 +11,6 @@ fi
 if [ -z "${DISPLAY}" ] && [ "${XDG_VTNR}" -eq 1 ]; then
 	# exec startx
   if uwsm check may-start; then
-      exec uwsm start hyprland-uwsm.desktop
+      exec uwsm start hyprland.desktop
   fi
 fi

@@ -148,11 +148,11 @@ alias dnpm="ddev npm"
 alias dcomp="ddev composer"
 alias nvimdiff="nvim -d"
 
-export NVM_DIR="$HOME/.nvm"
+export NVM_DIR="$HOME/.config/nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-if [ -f "/usr/bin/aws_completer" ] ; then
-  complete -C '/usr/bin/aws_completer' aws
+if command -v aws_completer >/dev/null 2>&1; then
+  complete -C "$(command -v aws_completer)" aws
 fi
 

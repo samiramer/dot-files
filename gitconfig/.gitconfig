@@ -7,3 +7,5 @@
 	tool = nvimdiff
 [core]
 	editor = vi
+[init]
+	defaultBranch = main
